@@ -2,8 +2,8 @@ module.exports = {
 	xhrRequest : function( args ){
 		var url = args.url;			//resource url
 		var method = args.method;	//'GET', 'POST', 'PUT', 'DELETE'
-		var params = args.params;	//object
-		var headers = args.headers;	//string/object
+		var params = args.params || {};	//object
+		var headers = args.headers || {};	//string/object
 
 		return new Promise(function(resolve, reject){
 			var xhr = new XMLHttpRequest();
