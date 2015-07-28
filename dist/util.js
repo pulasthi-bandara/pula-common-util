@@ -1,9 +1,14 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports = {
-	xhrRequest : function( url ){
+	xhrRequest : function( args ){
+		var url = args.url;			//resource url
+		var method = args.method;	//'GET', 'POST', 'PUT', 'DELETE'
+		var params = args.params;	//object
+		var headers = args.headers;	//string/object
+
 		return new Promise(function(resolve, reject){
 			var xhr = new XMLHttpRequest();
-			xhr.open('GET', url);
+			xhr.open(xhr.method, url);
 			xhr.onload = function () {
 				if (this.status >= 200 && this.status < 300) {
 					resolve(xhr.response);
@@ -20,6 +25,16 @@ module.exports = {
 					statusText: xhr.statusText
 				});
 			};
+			//set headers
+			Object.keys(params).forEach(function(key){
+				xhr.setRequestHeader(key, headers[key]);
+			});
+			//if params are sent as an object stringify
+			if (params && typeof params === 'object') {
+				params = Object.keys(params).map(function (key) {
+					return encodeURIComponent(key) + '=' + encodeURIComponent(params[key]);
+				}).join('&');
+		    }
 			xhr.send();
 		});
 	},
