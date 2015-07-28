@@ -1,8 +1,13 @@
 {
-  "name": "common_util",
+  "name": "pula-common-util",
   "version": "1.0.0",
-  "description": "lightweight common javasccript utilities",
-  "main": "index.js",
+  "description": "a collection of lightweight common javasccript utilities I use for day to day development. feel free to use",
+  "main": "./src/main.js",
+  "homepage": "https://github.com/pulasthi-bandara/pula-common-util",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pulasthi-bandara/pula-common-util.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
