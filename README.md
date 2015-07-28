@@ -34,25 +34,40 @@ pulasthi@pulasthibandara.com
 ####dom functions
 
 1) **add class**
-
+```javascript
 	util_.addClass( element, className );
+```
 
 	*element can be a dom element or an array of elements*
 
 2) **remove class**
-
+```javascript
 	util_removeClass( element, className );
+```
 
 	*element can be a dom element or an array of elements*
 
 ####parse functions
 
 1) **convert px in css values to number**
-
+```javascript
 	util_.cssToNumber( string );
+```
 
 ####ajax
 
 1) **promisified ajax request**
+```javascript
+	util_.xhrRequest(params);
+```
 
-	util_.xhrRequest(method, url);
+```javascript
+	params : {
+		url: string,
+		method: string, \\'GET', 'POST', 'PUT', 'DELETE'
+		headers: object,
+		params: string || object, \\object will be converted to a uri encoded string
+	}
+```
+
+
