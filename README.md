@@ -38,14 +38,14 @@ pulasthi@pulasthibandara.com
 	util_.addClass( element, className );
 ```
 
-	*element can be a dom element or an array of elements*
+   	element can be a dom element or an array of elements
 
 2) **remove class**
 ```javascript
 	util_removeClass( element, className );
 ```
 
-	*element can be a dom element or an array of elements*
+	element can be a dom element or an array of elements
 
 ####parse functions
 
