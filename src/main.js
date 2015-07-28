@@ -24,11 +24,9 @@ var root = typeof self === 'object' && self.self === self && self ||
 // Export the Underscore object for **Node.js**, with
 // backwards-compatibility for their old module API. If we're in
 // the browser, add `util_` as a global object.
-if (typeof root.exports !== 'undefined') {
-	if (typeof root.module !== 'undefined' && root.module.exports) {
-		root.exports = root.module.exports = util_;
-	}
-	root.exports.util_ = util_;
+
+if (typeof root.module !== 'undefined' && root.module.exports) {
+	exports = module.exports = util_;
 } else {
 	root.util_ = util_;
 }
