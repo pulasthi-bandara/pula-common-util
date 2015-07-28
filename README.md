@@ -4,11 +4,13 @@ A collection of lightweight common javasccript utility functions I use for day t
 
 ## Installation
 
-
+npm install pula-common-util --save-dev
 
 ## Usage
 
 include "/dist/util.js"
+this would create a global 'util_' object where you can access functions
+ex: util_.functionname();
 
 ## Contributing
 
@@ -25,3 +27,26 @@ project started
 
 ## Author
 pulasthi@pulasthibandara.com
+
+
+##documentation
+
+###dom functions
+
+1. **add class**
+	util_.addClass( element, className );
+	*element can be a dom element or an array of elements*
+
+2. **remove class**
+	util_removeClass( element, className );
+	*element can be a dom element or an array of elements*
+
+###parse functions
+
+1. **convert px in css values to number**
+	util_.cssToNumber( string );
+
+##ajax
+
+1. **promisified ajax request**
+	util_.xhrRequest(method, url);
