@@ -1,0 +1,21 @@
+{
+  "name": "common_util",
+  "version": "1.0.0",
+  "description": "lightweight common javasccript utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utilities",
+    "dom",
+    "frontend"
+  ],
+  "author": "pulasthi@pulasthibandara.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "gulp": "^3.9.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
