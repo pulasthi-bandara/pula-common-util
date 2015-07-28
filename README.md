@@ -21,9 +21,10 @@ ex: util_.functionname();
 5. Submit a pull request :D
 
 ## History
-
+- 1.0.1
+		xhrResuest is now fully featured
 - 1.0.0
-project started
+		project started
 
 ## Author
 pulasthi@pulasthibandara.com
