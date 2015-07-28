@@ -7,7 +7,7 @@ module.exports = {
 
 		return new Promise(function(resolve, reject){
 			var xhr = new XMLHttpRequest();
-			xhr.open(xhr.method, url);
+			xhr.open(method, url);
 			xhr.onload = function () {
 				if (this.status >= 200 && this.status < 300) {
 					resolve(xhr.response);
