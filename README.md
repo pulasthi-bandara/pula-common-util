@@ -35,22 +35,22 @@ pulasthi@pulasthibandara.com
 
 1. **add class**
 
-...util_.addClass( element, className );
-...*element can be a dom element or an array of elements*
+⋅⋅⋅util_.addClass( element, className );
+⋅⋅⋅*element can be a dom element or an array of elements*
 
 2. **remove class**
 
-...util_removeClass( element, className );
-...*element can be a dom element or an array of elements*
+⋅⋅⋅util_removeClass( element, className );
+⋅⋅⋅*element can be a dom element or an array of elements*
 
 ####parse functions
 
 1. **convert px in css values to number**
 
-...util_.cssToNumber( string );
+⋅⋅⋅util_.cssToNumber( string );
 
 ####ajax
 
 1. **promisified ajax request**
 
-...util_.xhrRequest(method, url);
+⋅⋅⋅util_.xhrRequest(method, url);
