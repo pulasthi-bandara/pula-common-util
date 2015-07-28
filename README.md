@@ -4,7 +4,7 @@ A collection of lightweight common javasccript utility functions I use for day t
 
 ## Installation
 
-npm install pula-common-util --save-dev
+npm install pula-common-util --save
 
 ## Usage
 
