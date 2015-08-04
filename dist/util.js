@@ -73,6 +73,16 @@ module.exports = {
 				array[i].className += ' '+ add;
 			}
 		};
+	},
+
+	hasClass : function(element, className){
+		var className = ' ' + className.trim() + ' ';
+		var formated = ' ' + element.className + ' ';
+		if( formated.indexOf(className) > -1 ){
+			return true;
+		}else{
+			return false;
+		}
 	}
 };
 },{}],3:[function(require,module,exports){
@@ -91,7 +101,7 @@ for (var i = 0; i < util_modules.length; i++) {
 	Object.keys(util_modules[i]).forEach(function(key){
 		util_[ key ] = util_modules[i][key];
 	});
-};
+}
 
 // Establish the root object, `window` (`self`) in the browser, `global`
 // on the server, or `this` in some virtual machines. We use `self`

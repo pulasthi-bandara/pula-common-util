@@ -31,5 +31,15 @@ module.exports = {
 				array[i].className += ' '+ add;
 			}
 		};
+	},
+
+	hasClass : function(element, className){
+		var className = ' ' + className.trim() + ' ';
+		var formated = ' ' + element.className + ' ';
+		if( formated.indexOf(className) > -1 ){
+			return true;
+		}else{
+			return false;
+		}
 	}
 };

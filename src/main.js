@@ -12,7 +12,7 @@ for (var i = 0; i < util_modules.length; i++) {
 	Object.keys(util_modules[i]).forEach(function(key){
 		util_[ key ] = util_modules[i][key];
 	});
-};
+}
 
 // Establish the root object, `window` (`self`) in the browser, `global`
 // on the server, or `this` in some virtual machines. We use `self`
