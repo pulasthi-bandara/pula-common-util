@@ -34,7 +34,7 @@ module.exports = {
 					return encodeURIComponent(key) + '=' + encodeURIComponent(params[key]);
 				}).join('&');
 		    }
-			xhr.send();
+			xhr.send(params);
 		});
 	},
 }
