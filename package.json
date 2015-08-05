@@ -1,6 +1,6 @@
 {
   "name": "pula-common-util",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "a collection of lightweight common javasccript utilities I use for day to day development. feel free to use",
   "main": "./dist/util.js",
   "browser": "./src/main.js",
