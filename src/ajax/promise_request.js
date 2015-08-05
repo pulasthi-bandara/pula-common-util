@@ -25,7 +25,7 @@ module.exports = {
 				});
 			};
 			//set headers
-			Object.keys(params).forEach(function(key){
+			Object.keys(headers).forEach(function(key){
 				xhr.setRequestHeader(key, headers[key]);
 			});
 			//if params are sent as an object stringify
